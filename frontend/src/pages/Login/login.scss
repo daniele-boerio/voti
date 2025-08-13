@@ -1,0 +1,49 @@
+#root {
+  height: 100%;
+}
+
+.loginPage {
+  display: flex;
+  justify-content: center; // centra orizzontalmente
+  align-items: center; // centra verticalmente
+  height: 100%;
+}
+
+// Stile specifico per la card del login
+.loginCard {
+  display: flex;
+  flex-direction: column; // impila i figli in verticale
+  align-items: center; // centra orizzontalmente il contenuto
+  padding: 2rem;
+  gap: 1rem; // spazio tra gli elementi
+  width: fit-content; // larghezza fissa (opzionale)
+
+  .p-card-title {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.loginCard label {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: red; // opzionale, per evidenziare errore
+  margin-bottom: 1rem;
+}
+
+.loginCard button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 1rem;
+  .p-dropdown {
+    width: 100%;
+  }
+  .p-password {
+    width: 100%;
+  }
+}
